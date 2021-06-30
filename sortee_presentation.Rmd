@@ -10,6 +10,9 @@ output:
     self_contained: false
     background_transition: fade
     reveal_plugins: [notes]
+    includes:
+      after_body: footer.html
+
 ---
 
 ## Research Code 
@@ -27,13 +30,10 @@ With such policy growth comes much responsibility as the demand for reproducible
 Modern computational methods are an essential skill in today's scientific methodology. Computational research skills such as data handling and processing are often informally transmitted yet are essential skills for early career researchers often found on advertising platforms (Maer-Matei et al., 2019). Coding is often an ad-hoc process that is applied over the course of a projects life and, a lack of formal training for researchers (Koehler Leman et al., 2020) without much forethought to how to structure a scientific work flow for later reproduction. Data is often an active process of collection, cleaning, analysis and delivery yet the function of a published paper is rather static. What approach can we as scientist utilize to achieve transparency and computational reproducibility? How can we modernize our workflows to merge the static and dynamic processes of the scientific method? How do modern researchers navigate the plethora of tools available? Why the mismatch between code availability and increase in code sharing policy?
 </div>
 
-## Computational Reproducibility 
+## Computational Reproducibility
 
-- The ability to produce equivalent analytical outcomes from the same data set using the same code and software as the original study  (Fidler et al., 2017).
+> The ability to produce equivalent analytical outcomes from the same data set using the same code and software as the original study  (Fidler et al., 2017).
 
-<div class="notes">
-Computational reproducibility refers to the ability to produce equivalent analytical outcomes from the same data set using the same code and software as the original study. 
-</div>
 
 ## Have You Reproduced Lately?
 
@@ -119,7 +119,7 @@ The application of the DevOps, orchestrated into a seamless integrated process c
 Does this mean we have to learn computer science & multiple programming languages? No. As we will see identifying the scope of the research project at the onset can help build a framework for a scientific workflow and provide direction on what tools to implement. Most of the tools of which are freely available as open source and already used in the scientific community. 
 </div>
 
-## Worfkflows, pipelines and components
+## Worfkflows, Pipelines & Components! Oh My!
 > - **Scientific Workflow**: Overall scope of the research project.
 > - **Pipeline**: Execution of each process or stages of the scientific workflow.
 > - **Components**: Tools and/or software adopted to execute the pipeline to deliver research outcomes.
@@ -142,7 +142,7 @@ The components are the tools used in software development to address inconsisten
 Examples from ecology and biology demonstrate that adopting ResearchOps approach enables up to date data and forecasting, reduces analysis time and deliver results to stakeholders. Additionally, using freely available open source tools. 
 </div>
 
-## ResearchOps Framework {data-transition="fade-out"}
+## ResearchOps Framework {data-transition="zoom-in"}
 
 <div align=center>
 <img src="figures/resops_framework.png" style="background-color:transparent; border:0px; box-shadow:none;"></img>
@@ -186,11 +186,13 @@ Each of the components in the pipeline addresses a reproducible outcome. Contain
 </div>
 
 <div class="notes">
-Ideally to have this at the onset of a project would be nice however, going through this process can also be beneficial during a project. This can also be adopted by a single researcher and scaled to larger collaborative research projects. 
+Ideally to have this at the onset of a project would be nice however, going through this process can also be beneficial during a project. This can also be adopted by a single researcher or scaled to larger collaborative research projects. To conclude, modern research methods need a modern approach and as journals adopt policies for sharing data, researchers can benefit from ResOps best practice to increase computational reproducibility & transparency. 
 </div>
 
 ## Thank You! 
+<span style="color: #808080;"><em><a href="https://twitter.com/aaron_willcox">@aaron_willcox</a></em></span>
+<a href="https://twitter.com/aaron_willcox" class="fa fa-twitter"></a>
 
-<div align=center>
-<img src="figures/twitter_logo.jpg" height="100" width="120" style="background-color:transparent; border:0px; box-shadow:none;"></img> **@aaron_willcox**
-</div>
+<span style="color: #808080;"><em><a href="https://twitter.com/Elliot_Gould_">@Elliot_Gould_</a></em></span>
+<a href="https://twitter.com/Elliot_Gould_" class="fa fa-twitter"></a>
+

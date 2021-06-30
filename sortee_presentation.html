@@ -472,12 +472,9 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </section>
 <section id="computational-reproducibility" class="slide level2">
 <h2>Computational Reproducibility</h2>
-<ul>
-<li>The ability to produce equivalent analytical outcomes from the same data set using the same code and software as the original study (Fidler et al., 2017).</li>
-</ul>
-<aside class="notes">
-<p>Computational reproducibility refers to the ability to produce equivalent analytical outcomes from the same data set using the same code and software as the original study.</p>
-</aside>
+<blockquote>
+<p>The ability to produce equivalent analytical outcomes from the same data set using the same code and software as the original study (Fidler et al., 2017).</p>
+</blockquote>
 </section>
 <section id="have-you-reproduced-lately" class="slide level2">
 <h2>Have You Reproduced Lately?</h2>
@@ -570,8 +567,8 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <p>The application of the DevOps, orchestrated into a seamless integrated process can increase productivity, collaborate effectively within and between research members and teams and, aid in computational reproducibility and transparency of their work. ResearchOps helps modern scientists stand out from DevOps and define our objectives differently in the sense to preserve and modernise our methods for replication. Does this mean we have to learn computer science &amp; multiple programming languages? No. As we will see identifying the scope of the research project at the onset can help build a framework for a scientific workflow and provide direction on what tools to implement. Most of the tools of which are freely available as open source and already used in the scientific community.</p>
 </aside>
 </section>
-<section id="worfkflows-pipelines-and-components" class="slide level2">
-<h2>Worfkflows, pipelines and components</h2>
+<section id="worfkflows-pipelines-components-oh-my" class="slide level2">
+<h2>Worfkflows, Pipelines &amp; Components! Oh My!</h2>
 <ul>
 <li class="fragment"><strong>Scientific Workflow</strong>: Overall scope of the research project.</li>
 <li class="fragment"><strong>Pipeline</strong>: Execution of each process or stages of the scientific workflow.</li>
@@ -593,8 +590,8 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <p>Examples from ecology and biology demonstrate that adopting ResearchOps approach enables up to date data and forecasting, reduces analysis time and deliver results to stakeholders. Additionally, using freely available open source tools.</p>
 </aside>
 </section>
-<section id="researchops-framework" class="slide level2" data-transition="fade-out">
-<h2 data-transition="fade-out">ResearchOps Framework</h2>
+<section id="researchops-framework" class="slide level2" data-transition="zoom-in">
+<h2 data-transition="zoom-in">ResearchOps Framework</h2>
 <div data-align="center">
 <p><img src="figures/resops_framework.png" style="background-color:transparent; border:0px; box-shadow:none;"></img></p>
 </div>
@@ -632,14 +629,13 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <p><img src="figures/resops_framework.png" style="background-color:transparent; border:0px; box-shadow:none;"></img></p>
 </div>
 <aside class="notes">
-<p>Ideally to have this at the onset of a project would be nice however, going through this process can also be beneficial during a project. This can also be adopted by a single researcher and scaled to larger collaborative research projects.</p>
+<p>Ideally to have this at the onset of a project would be nice however, going through this process can also be beneficial during a project. This can also be adopted by a single researcher or scaled to larger collaborative research projects. To conclude, modern research methods need a modern approach and as journals adopt policies for sharing data, researchers can benefit from ResOps best practice to increase computational reproducibility &amp; transparency.</p>
 </aside>
 </section>
 <section id="thank-you" class="slide level2">
 <h2>Thank You!</h2>
-<div data-align="center">
-<p><img src="figures/twitter_logo.jpg" height="100" width="120" style="background-color:transparent; border:0px; box-shadow:none;"></img> <strong><span class="citation" data-cites="aaron_willcox">@aaron_willcox</span></strong></p>
-</div>
+<p><span style="color: #808080;"><em><a href="https://twitter.com/aaron_willcox"><span class="citation" data-cites="aaron_willcox">@aaron_willcox</span></a></em></span> <a href="https://twitter.com/aaron_willcox" class="fa fa-twitter"></a></p>
+<p><span style="color: #808080;"><em><a href="https://twitter.com/Elliot_Gould_"><span class="citation" data-cites="Elliot_Gould_">@Elliot_Gould_</span></a></em></span> <a href="https://twitter.com/Elliot_Gould_" class="fa fa-twitter"></a></p>
 </section>
     </div>
   </div>
@@ -652,14 +648,52 @@ document.getElementsByTagName('head')[0].appendChild(style);
       // Full list of configuration options available at:
       // https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+        // Display a presentation progress bar
+        progress: true,
+        // Display the page number of the current slide
+        slideNumber: false,
         // Push each slide change to the browser history
         history: true,
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+        // Enable the slide overview mode
+        overview: true,
         // Vertical centering of slides
         center: false,
+        // Enables touch navigation on devices with touch input
+        touch: true,
+        // Loop the presentation
+        loop: false,
+        // Change the presentation direction to be RTL
+        rtl: false,
+        // Turns fragments on and off globally
+        fragments: true,
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
         // Transition style
         transition: 'slide', // none/fade/slide/convex/concave/zoom
+        // Transition speed
+        transitionSpeed: 'default', // default/fast/slow
         // Transition style for full page slide backgrounds
         backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
 
 
 
@@ -690,6 +724,21 @@ document.getElementsByTagName('head')[0].appendChild(style);
   })();
 </script>
 
+<div class='reveal'>
+  <div class='footer'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <p style="text-align: center;">
+    <span style="color: #808080;"><em><a href="https://github.com/psychtek/">@aaron_willcox</a></em></span>
+    <a href="https://twitter.com/aaron_willcox" class="fa fa-twitter"></a>
+    <a href="https://www.linkedin.com/in/aawillcox/" class="fa fa-linkedin"></a>
+    <a href="https://github.com/psychtek/" class="fa fa-github"></a> <b>||</b>
+    <span style="color: #808080;"><em><a href="https://github.com/egouldo">@Elliot_Gould_</a></em></span>
+        <a href="https://twitter.com/Elliot_Gould_" class="fa fa-twitter"></a>
+    <a href="https://www.linkedin.com/in/elliot-gould-846a1266/" class="fa fa-linkedin"></a>
+    <a href="https://github.com/egouldo" class="fa fa-github"></a>
+ </p>
+ </div>
+</div>
 
   </body>
 </html>
