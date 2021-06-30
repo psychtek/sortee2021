@@ -459,26 +459,44 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <section id="research-code" class="slide level2">
 <h2>Research Code</h2>
 <ul>
-<li><p>Source code generated each year grows by about 20% (L. Hatton &amp; M. van Genuchten, 2019)</p></li>
-<li><p>Data handling and processing are often informally transmitted</p></li>
-<li><p>Lack of formal training for researchers (Koehler Leman et al., 2020)</p></li>
-<li><p>Best practice for computational reproducibility?</p></li>
-<li><p>How to navigate the available tools?</p></li>
+<li class="fragment">Source code generated each year grows by about 20% <small>(L. Hatton &amp; M. van Genuchten, 2019)</small>.</li>
+</ul>
+<ul>
+<li class="fragment">Data handling and processing are often informally transmitted.</li>
+</ul>
+<ul>
+<li class="fragment">Lack of formal training for researchers <small>(Koehler Leman et al., 2020)</small>.</li>
+</ul>
+<ul>
+<li class="fragment">Best practice for computational reproducibility?</li>
+</ul>
+<ul>
+<li class="fragment">How to navigate the available tools?</li>
 </ul>
 <aside class="notes">
-<p>The amount of source code generated for research continues to grow each year by about 20% (L. Hatton &amp; M. van Genuchten, 2019) with such growth comes much responsibility however, as the demand for reproducible workflows and transparent research practices grows so does a need for a industry best practice.</p>
+<p>The amount of source code generated for research continues to grow each year by about 20% (L. Hatton &amp; M. van Genuchten, 2019) with such growth comes much responsibility however, as the demand for reproducible workflows and transparent research practices grows so does a need for industry best practice.</p>
 <p>Modern computational methods are an essential skill in today’s scientific methodology. Computational research skills such as data handling and processing are often informally transmitted and are essential skills for early career researchers often found on advertising platforms (Maer-Matei et al., 2019). Yet, coding is often an ad-hoc process that is applied over the course of a projects life and a lack of formal training for researchers (Koehler Leman et al., 2020) and without much forethought to how to structure a scientific work flow for later reproduction. Data is often an active process of collection, cleaning, analysis and delivery yet the function of a published paper is rather static. What approach can we as scientist utilize to achieve transparency and computational reproducibility? How can we modernize our workflows to merge the static and dynamic processes of the scientific method? How do modern researchers navigate the plethora of tools available?</p>
 </aside>
 </section>
 <section id="computational-reproducibility" class="slide level2">
 <h2>Computational Reproducibility</h2>
 <ul>
-<li><p>The ability to produce equivalent analytical outcomes from the same data set using the same code and software as the original study (Fidler et al., 2017).</p></li>
-<li><p>Archmiller et al., (2020) Found 74 suitable for CR of the 19 obtained 13 were able to mostly or fully reproduce.</p></li>
-<li><p>Obels et al., (2020) 62 articles identified, 41 had data available and 37 had analysis scripts. Could run scripts for 31 analysis and reproduced main results for 21 articles.</p></li>
+<li>The ability to produce equivalent analytical outcomes from the same data set using the same code and software as the original study (Fidler et al., 2017).</li>
 </ul>
 <aside class="notes">
-<p>Computational reproducibility refers The ability to produce equivalent analytical outcomes from the same data set using the same code and software as the original study. Archmiller et al., (2020) explored the level of computational reproducibility in the field of wildlife science. Found 74 suitable for CR of the 19 obtained 13 were able to mostly or fully reproduce. They concluded by recommend increase data sharing, organization and documentation and training.</p>
+<p>Computational reproducibility refers The ability to produce equivalent analytical outcomes from the same data set using the same code and software as the original study.</p>
+</aside>
+</section>
+<section id="have-you-reproduced-lately" class="slide level2">
+<h2>Have You Reproduced Lately?</h2>
+<ul>
+<li class="fragment">Archmiller et al., (2020) Found 74 suitable for CR of the 19 obtained 13 were able to mostly or fully reproduce.</li>
+</ul>
+<ul>
+<li class="fragment">Obels et al., (2020) 62 articles identified, 41 had data available and 37 had analysis scripts. Could run scripts for 31 analysis and reproduced main results for 21 articles.</li>
+</ul>
+<aside class="notes">
+<p>Archmiller et al., (2020) explored the level of computational reproducibility in the field of wildlife science. Found 74 suitable for CR of the 19 obtained 13 were able to mostly or fully reproduce. They concluded by recommend increase data sharing, organization and documentation and training.</p>
 <p>Obels et al., (2020) tried to reproduce results from registered psychology reports between 2014 to 2018. 62 articles identified, 41 had data available and 37 had analysis scripts. They could run scripts for 31 analysis and reproduced main results for 21 articles. They too recommend good research practices.</p>
 </aside>
 </section>
@@ -491,9 +509,13 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <section id="source-of-irreproducible-results" class="slide level2">
 <h2>Source of irreproducible results</h2>
 <ul>
-<li><p>Lack of a workflow framework</p></li>
-<li><p>Missing software dependencies</p></li>
-<li><p>Excluded data manipulation steps (Leipzig et al., 2020)</p></li>
+<li class="fragment">Lack of a workflow framework</li>
+</ul>
+<ul>
+<li class="fragment">Missing software dependencies</li>
+</ul>
+<ul>
+<li class="fragment">Excluded data manipulation steps (Leipzig et al., 2020)</li>
 </ul>
 <aside class="notes">
 <p>We need to identify what is best practice and what tools and components should we use in our scientific workflows? A common source of the inability to reproduce data and code is the lack of a workflow framework, missing software dependencies and excluded data manipulation steps (Leipzig et al., 2020). A problem addressed in the software engineering domain through Devops. DevOps (Development / Operations) is a cultural movement that aims the collaboration among stakeholders involved in the development, deployment and operation of software to deliver a high-quality product or service in the shortest possible time.</p>
@@ -502,46 +524,94 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <section id="devops" class="slide level2">
 <h2>DevOps</h2>
 <ul>
-<li><p>Version Control #TODO</p></li>
-<li><p>Virtualization #TOD</p></li>
-<li><p>Continuous Practices (CI/CD) #TODO</p></li>
-<li><p>Testing #TODO</p></li>
+<li class="fragment">Version Control TODO</li>
+</ul>
+<ul>
+<li class="fragment">Virtualization TODO</li>
+</ul>
+<ul>
+<li class="fragment">Continuous Practices (CI/CD) TODO</li>
+</ul>
+<ul>
+<li class="fragment">Testing #TODO</li>
 </ul>
 <aside class="notes">
-<p>DevOps now a term commonly used to describe a suit of tools such as version control, infrastructure as code, virtualization, continuous delivery/deployment &amp; testing. Unsurprisingly or perhaps surprisingly, scientists already are adopting these tools in their workflows. That is, take the already existing practices and tools from DevOps and integrate these into a best practice approach using commonly adopted tools already being used in scientific research and treat the scientific workflow as software product.</p>
+<p>DevOps is now more commonly used to describe a suit of tools such as version control, infrastructure as code, virtualization, continuous delivery/deployment &amp; testing. Unsurprisingly or perhaps surprisingly, scientists already are adopting these tools in their workflows. Version control is incorporated into Github, virtualization has now taken the form of containers like Docker and CI/CD can be used with Github Actions, Gitlab CI or Travis-CI. That is, take the already existing practices and tools from DevOps and integrate these into a best practice approach using commonly adopted tools already being implemented in scientific research and, treat the scientific workflow as software product.</p>
 </aside>
 </section>
-<section id="researcher-as-software-development" class="slide level2">
-<h2>Researcher as Software Development</h2>
+<section id="research-as-software-development" class="slide level2">
+<h2>Research as Software Development</h2>
 <ul>
-<li><p>No differences between researchers from computer science (Yasmin AlNoamany &amp; John A. Borghi, 2018).</p></li>
-<li><p>Computational reproducibility best approached by focusing on software as a product (Hocquet &amp; Wieber, 2021).</p></li>
+<li class="fragment">No differences between researchers from computer science (Yasmin AlNoamany &amp; John A. Borghi, 2018).</li>
 </ul>
-<div class="notes">
-<p>There is little difference between research and computer science and related disciplines in the use of software engineering. Furthermore, computational reproducibility is best approached by focusing on the research process as a software product. ResearchOps is presented here as a case for scientific applications. </dev></p>
+<ul>
+<li class="fragment">Computational reproducibility best approached by focusing on software as a product (Hocquet &amp; Wieber, 2021).</li>
+</ul>
+<ul>
+<li class="fragment">Product is the reproducible outcome built around a scientific workflow.</li>
+</ul>
+<aside class="notes">
+<p>There is little difference between research and computer science and related disciplines in the use of software engineering. Furthermore, computational reproducibility is best approached by focusing on the research process as a software product. Product in the scientific sense is the reproducible outcome built around scientific workflow. ResearchOps is presented here as a case for scientific applications.</p>
+</aside>
 </section>
 <section id="researchops" class="slide level2">
 <h2>ResearchOps</h2>
 <p>The Case for DevOps in Scientific Applications (de Bayser et al., 2015)</p>
 <ul>
-<li><p>increase scientific productivity (Peikert &amp; Brandmaier, 2019),</p></li>
-<li><p>collaborate effectively within and between researchers (Díaz et al., 2019) and,</p></li>
-<li><p>aid in computational reproducibility (Beaulieu-Jones &amp; Greene, 2017) and transparency of their work (Wittman &amp; Aukema, 2020).</p></li>
-<li><p><strong>Does this mean we have to learn computer science &amp; multiple programming languages?</strong></p></li>
+<li class="fragment">increase scientific productivity (Peikert &amp; Brandmaier, 2019);</li>
+</ul>
+<ul>
+<li class="fragment">collaborate effectively within and between researchers (Díaz et al., 2019) and;</li>
+</ul>
+<ul>
+<li class="fragment">aid in computational reproducibility (Beaulieu-Jones &amp; Greene, 2017) and transparency of their work (Wittman &amp; Aukema, 2020).</li>
+</ul>
+<ul>
+<li class="fragment"><strong>Does this mean we have to learn computer science &amp; multiple programming languages?</strong></li>
 </ul>
 <aside class="notes">
-<p>The application of the DevOps, orchestrated into a seamless integrated process can increase productivity, collaborate and communicate effecticely within and between research members and team and aid in computational reproducibility. Does this mean we have to learn computer science &amp; multiple programming languages? No. As we will see identifying the scope of the research project at the onset can help build a framework for a scientific workflow and provide direction on what tools to implement.</p>
+<p>The application of the DevOps, orchestrated into a seamless integrated process can increase productivity, collaborate and communicate effecticely within and between research members and team and aid in computational reproducibility. Does this mean we have to learn computer science &amp; multiple programming languages? No. As we will see identifying the scope of the research project at the onset can help build a framework for a scientific workflow and provide direction on what tools to implement. Most of the tools of which are freely available as open source and already used in the scientific community.</p>
 </aside>
 </section>
 <section id="worfkflows-pipelines-and-components" class="slide level2">
 <h2>Worfkflows, pipelines and components</h2>
+<section data-auto-animate>
 <ul>
-<li><strong>Scientific Workflow</strong> = Overall scope of the research project.</li>
-<li><strong>Pipeline</strong> = Execution of each process or stages of the scientific workflow.</li>
-<li><strong>Components</strong> = Tools and/or software adopted to execute the pipeline to deliver research outcomes.</li>
+<li>
+Overall scope of the research project.
+</li>
+<li>
+Execution of each process or stages of the scientific workflow.
+</li>
+<li>
+Tools and/or software adopted to execute the pipeline to deliver research outcomes.
+</li>
 </ul>
+</section>
+<section data-auto-animate>
+<ul>
+<li>
+Scientific Workflow
+</li>
+<li>
+Overall scope of the research project.
+</li>
+<li>
+Pipeline
+</li>
+<li>
+Execution of each process or stages of the scientific workflow.
+</li>
+<li>
+Components
+</li>
+<li>
+Tools and/or software adopted to execute the pipeline to deliver research outcomes.
+</li>
+</ul>
+</section>
 <aside class="notes">
-<p>Scientific workflows represent complex design pipelines that capture processing requirements for researchers throughout their investigations that allow the execution of data collection, data flow, computation, analysis in an integrative method to deliver and publish results (Catlin et al., 2019). The pipeline is a set of discrete stages in which a series of automated transformations and tests are performed on the raw data. Each stage is identified through the overall scope of the scientific workflow so that each stage has a purpose. The components are the tools used in software development to address inconsistencies in code through automated testing and quality assurance measures so that the product maintains a standard before deployment or delivery. This ensures that the pipeline adheres to data management protocols. For researchers, this means adding testing to their tool kits and automating such tasks through continuous integration can provide rapid feedback when a component fails and maintain a reliable pipeline. Testing is something that has not been fully adopted in modern scientific methods. This could explain as to why some previous computational reproduction attempts have not been as successful.</p>
+<p>To conceptualise this easier we look at researchops as three areas of focus: The project management level or scope, the pipeline and the components. Scientific workflows represent complex design pipelines that capture processing requirements for researchers throughout their investigations that allow the execution of data collection, data flow, computation, analysis in an integrative method to deliver and publish results (Catlin et al., 2019). This is the project management level. The pipeline is a set of discrete stages in which a series of automated transformations and tests are performed on the raw data. Each stage is identified through the overall scope of the scientific workflow so that each stage has a purpose. The components are the tools used in software development to address inconsistencies in code through automated testing and quality assurance measures so that the product maintains a standard before deployment or delivery. This ensures that the pipeline adheres to data management protocols. For researchers, this means adding testing to their tool kits and automating such tasks through continuous integration that can provide rapid feedback when a component fails and maintain a reliable pipeline. Testing is something that has not been fully adopted in modern scientific methods. This could explain as to why some previous computational reproduction attempts have not been as successful.</p>
 </aside>
 </section>
 <section id="examples" class="slide level2">
@@ -560,8 +630,25 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <p><img src="figures/resops_framework.png" style="background-color:transparent; border:0px; box-shadow:none;"></img></p>
 </div>
 <aside class="notes">
-<p>Presented here is the overall ResearchOps framework. Given the community growth in using R our suggestions tend to lean towards using Rstudio as examples however, any coding and git related UI can be substituted as long as the tools address the purpose and reproducible outcome.</p>
+<p>Presented here is the overall ResearchOps framework. Any coding and git related UI can be substituted as long as the tools address the purpose and reproducible outcome. The project level is essentially an area where we focus on the “plan” or scope of the research outcome. By scoping out the processes needed, indentyfing stakeholders and how to collaborate and communicate results then directs us to design the discrete stages of the pipeline in our chosen scripting language. This then wrapped into a container and the pipeline is designed and calibrated in such a way as to meet the initial scope of the project.</p>
+<p>Each of the components in the pipeline address a reproducibile outcome to ensure long term preservation of the methods and results. Note though, it would be ideal to have this at the onset of a project however, taking a step back and going through this process can also be beneficial. This can also be adopted by a single researcher and scaled to larger collaborative research projects.</p>
+<p>Containers: libs and dependencies or the computational environment at runtime/</p>
 </aside>
+</section>
+<section id="thank-you" class="slide level2">
+<h2>Thank You!</h2>
+<div data-align="center">
+<p><img src="figures/twitter_logo.jpg" height="100" width="120" style="background-color:transparent; border:0px; box-shadow:none;"></img> <strong><span class="citation" data-cites="aaron_willcox">@aaron_willcox</span></strong></p>
+</div>
+</section>
+<section id="test-slide" class="slide level2">
+<h2>Test Slide</h2>
+<section data-markdown>
+</section>
+<section id="page-title" class="slide level2">
+<h2>Page title</h2>
+A paragraph with some text and a [link (<a href="http://hakim.se" class="uri">http://hakim.se</a>).
+</section>
 </section>
     </div>
   </div>
