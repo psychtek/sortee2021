@@ -1,5 +1,5 @@
 ---
-title: "ReSearchsOps: a principled framework and guide to computational reproducibility"
+title: "ReSearchOps: a principled framework and guide to computational reproducibility"
 author: "Aaron Willcox | Elliot Gould"
 date: "`r Sys.Date()`"
 output:
@@ -22,15 +22,23 @@ output:
 > - Data handling and processing often informally transmitted (Maer-Matei et al., 2019).
 > - Lack of formal training for researchers (Koehler Leman et al., 2020).
 
-> - Best practice for computational reproducibility?
-> - How to navigate the available tools? 
 
 <div class="notes">
-The amount of **source code generated for research continues to grow each year by about 20%** (L. Hatton & M. van Genuchten, 2019)  and although code sharing **policies** have been adopted by journals, from 15% in 2015 to 75% in 2020, code sharing from **authors** is still rather poor. As the demand for reproducible workflows and transparent research practices grows so does a need for industry best practice. 
-Modern computational methods are an essential skill in today's scientific methodology. Computational research skills such as data **handling and processing are often informally transmitted** yet are essential skills for early career researchers often found on advertising platforms (Maer-Matei et al., 2019). Coding is often an ad-hoc process that is applied over the course of a projects life and, a **lack of formal training for researchers** (Koehler Leman et al., 2020) without much forethought to how to structure a scientific work flow for preservation and reproduction. 
+The amount of source code generated for research continues to grow each year by about 20%, and although code-sharing policies are increasingly adopted by journals, rising from 15% of ecology journals in 2015 to 75% in 2020, data-sharing remains high, but code-sharing is rare.
+As the demand for reproducible workflows and transparent research practices grows so does a need for industry best practice. Modern computational methods are an essential skill in today's scientific methodology. 
+Computational research skills such as data handling and processing are often informally transmitted yet are pre-requisite skills  for early career researchers demanded by job-advertisements.
+Without formal training in code and workflow building, code development is typically an ad-hoc process that occurs over the course of a project's life, with little forethought given to structuring a computational workflow for ensuring data preservation and reproducibility.
 </div>
 
-## Challenges to Ecology
+## Computational Reproducibility
+
+> The ability to produce equivalent analytical outcomes from the same data set using the same code and software as the original study  (Fidler et al., 2017).
+
+<div class="notes">
+Computational Reproducibility refers to The ability to produce equivalent analytical outcomes from the same data set using the same code and software as the original study (Fidler et al., 2017). With this definition in mind we explored the current state of authors sharing code.
+</div>
+
+## Challenges in Ecology
 
 <section>
   <table class="reveal">
@@ -98,20 +106,6 @@ Conversely, bio-logging and automated sensors such as camera traps,  geo-locatio
 </div>
 
 
-## Computational Reproducibility
-
-> The ability to produce equivalent analytical outcomes from the same data set using the same code and software as the original study  (Fidler et al., 2017).
-
-<div class="notes">
-
-What approach can we as scientists utilize to achieve transparency and computational reproducibility? 
-How can we modernize our workflows to meet increasing data sharing requirements? 
-How do modern researchers navigate the plethora of tools available? 
-Why the mismatch between code availability and increase in code sharing policy?
-
-Computational Reproducibility refers to The ability to produce equivalent analytical outcomes from the same data set using the same code and software as the original study (Fidler et al., 2017). With this definition in mind we explored the current state of authors sharing code.
-</div>
-
 ## Have You Reproduced Lately?
 
 > - Archmiller et al., (2020) Found 74 suitable for CR of the 19 obtained 13 were able to mostly or fully reproduce.
@@ -139,22 +133,13 @@ What constitutes best practice?
 > - Lack of a workflow framework.
 > - Missing software dependencies.
 > - Excluded data manipulation steps (Leipzig et al., 2020).
+> - **Irreproducibility and a lack of transparency can be overcome by borrowing a set of tools and practices from software engineering, called DevOps**
 
 <div class="notes">
 A common source of the inability to reproduce data and code is the lack of a **workflow framework**, missing **software dependencies** and **excluded data manipulation** steps (Leipzig et al., 2020).
-We need to identify what **is** best practice and identify the discrepancy between code sharing attitudes and the reproduction results. 
-What tools and components should we use in our scientific workflows?  A problem that is addressed in the software engineering domain through Devops that researchers could benefit from.
+What approach can we as scientists utilize to achieve transparency and computational reproducibility? How can we modernize our workflows to meet increasing data sharing requirements? How do modern researchers navigate the plethora of tools available? Irreproducibility and a lack of transparency can be overcome by borrowing a set of tools and practices from software engineering, called DevOps
 </div>
 
-<!-- ## DevOps? -->
-
-<!-- <div align=center> -->
-<!-- <img src="figures/devops_cycle.png" style="background-color:transparent; border:0px; box-shadow:none;"></img> -->
-<!-- </div> -->
-
-<!-- <div class="notes"> -->
-<!-- DevOps (Development / Operations) is a cultural movement that aims the collaboration among stakeholders involved in the development, deployment and operation of software, to deliver a high-quality product or service in the shortest possible time. Although the scientific method doesnt necessarily have the time constraint, we can adopt this culture into our research skill set.  -->
-<!-- </div> -->
 
 ## DevOps
 
@@ -167,57 +152,54 @@ What tools and components should we use in our scientific workflows?  A problem 
 DevOps is commonly used to describe a suit of tools such as ***version control, infrastructure as code, virtualization, continuous delivery/deployment & testing**. Unsurprisingly or perhaps surprisingly, scientists already are adopting these tools in their pipelines. Version control is incorporated into Github, virtualization has now taken the form of containers like Docker and CI/CD can be used with Github Actions, Gitlab CI or Travis-CI. That is, take the already existing practices and tools from DevOps and integrate these into a best practice approach using commonly adopted tools already being implemented in scientific community and, treat the scientific workflow as software product.
 </div>
 
-## Modern Researchers
+## Modern Scientific Research
 
 > - No differences between researchers from computer science (Yasmin AlNoamany & John A. Borghi, 2018).
 
 > - Computational reproducibility best approached by focusing on software as a product (Hocquet & Wieber, 2021).
-
 > - "*Product*" is the reproducible outcome built around a scientific workflow. 
+
+> -  more easily achieve computational reproducibiltiy.
 
 
 <div class="notes">
-There is little difference between research and computer science and related disciplines in the use of software engineering. Furthermore, computational reproducibility is best approached by focusing on the research process as a software product. Product in the scientific sense is the reproducible outcome built around scientific workflow.  
+There is little difference between research and computer science and related disciplines in the use of software engineering. 
+As modern scientific researchers, the tools and approaches we use when developing analysis code and software, don’t actually differ substantially from software engineering - we just don’t conceptualise the computational aspects of our research as software engineering.
+
+Furthermore, computational reproducibility is best approached by focusing on the research process as a software product. Product in the scientific sense is the reproducible outcome built around scientific workflow.  
+By treating our analysis code and software as a product we can more easily achieve computational reproducibiltiy.
 </div>
 
 ## ResearchOps
 
 The Case for DevOps in Scientific Applications (de Bayser et al., 2015)
 
+> - Aid in computational reproducibility and transparency of their work (Beaulieu-Jones & Greene, 2017; Wittman & Aukema, 2020)
 > - Increase scientific productivity (Peikert & Brandmaier, 2019)
 > - Collaborate effectively within and between researchers (Díaz et al., 2019) 
-> - Aid in computational reproducibility and transparency of their work (Beaulieu-Jones & Greene, 2017; Wittman & Aukema, 2020)
 
-> - **Does this mean we have to learn computer science & multiple programming languages?**
 
 <div class="notes">
-The application of the DevOps, orchestrated into a seamless integrated process can increase productivity, collaborate effectively within and between research members and teams and, aid in computational reproducibility and transparency of their work. ResearchOps helps modern scientists stand out from DevOps and define our objectives differently in the sense to preserve and modernise our methods for replication. 
-Does this mean we have to learn computer science & multiple programming languages? No. As we will see identifying the scope of the research project at the onset can help build a framework for a scientific workflow and provide direction on what tools to implement. Most of the tools of which are freely available as open source and already used in the scientific community. 
+ResearchOps, or DevOps for Research, as coined by De Bayser et al., applies DevOps tools and workflows into scientific research contexts. 
+By translating DevOps for use in research contexts, ResOps provides a principled framework and guide to achieving computational reproducibility and transparency, and modernising scientific workflows utilising free and open-source software.
+By providing the tools and procedures for more seamlessly integrated analysis code and software development process, adopting ResOps practices will improve reproducibility, transparency of research, and increase productivity by providing tried-and-tested procedures for effective collaboration between research members and teams. 
 </div>
-
-## Examples 
-
-> - White et al., (2019) Ecological forecast system  - Using **R** to work with data and fit models, make forecasts and archive for delivery to stakeholders. Created a **automated pipeline** using **CI** to run once a week. 
-
-> - Yenni et al., (2019) Biology example using existing open source tools by performing **QA**, import, restructure data, **versioning** and archiving, rapid publishing(delivery), **automate** steps to reduce time. 
-
-<div class="notes">
-**Examples** from ecology and biology demonstrate that using open source tools to automate a data pipeline can deliver up to date data and forecasting, reduce analysis time and deliver results to stakeholders. The scientific community already has certainly increased the uptake of using such tools however, in order to encourage authors' to share code a conceptual framework is needed to structure the scientific workflow.  
-</div>
-
 
 ## Worfkflows, Pipelines & Components! Oh My!
+
 > - **Scientific Workflow**: Overall scope of the research project.
 > - **Pipeline**: Execution of each process or stages of the scientific workflow.
 > - **Components**: Tools and/or software adopted to execute the pipeline to deliver research outcomes.
 
 
 <div class="notes">
-To conceptualise this easier we look at researchops as three areas of focus: The project management level or scope, the pipeline and the components. 
-**Scientific workflows** represent complex design pipelines that capture processing requirements for researchers throughout their investigations that allow the execution of data collection, data flow, computation, analysis in an integrative method to deliver and publish results (Catlin et al., 2019). **This is the project management level.** The pipeline and components work together.
+At a high-level, we consider three aspects of ResOps: The project management level or scope, the pipeline and the components. 
+
+At the project management level is the scientific workflow. **Scientific workflows** represent complex design pipelines that capture processing requirements for researchers throughout their investigations that allow the execution of data collection, data flow, computation, analysis in an integrative method to deliver and publish results (Catlin et al., 2019).  
 
 The pipeline is a set of discrete stages in which a series of automated transformations and tests are performed on the raw data. Each stage is identified through the overall scope of the scientific workflow so that each stage has a purpose. 
-The components are the tools used in software development to address inconsistencies in code through automated testing and quality assurance measures so that the product maintains a standard before deployment or delivery. This ensures that the pipeline adheres to data management protocols. For researchers, this means adding testing to their tool kits and automating such tasks through continuous integration that can provide rapid feedback when a component fails and maintain a reliable pipeline. Testing is something that has not been fully adopted in modern scientific methods. This could explain as to why some previous computational reproduction attempts have not been as successful. 
+
+The components are the tools used in software development to address inconsistencies in code through automated testing and quality assurance measures so that the product maintains a standard before deployment or delivery. This ensures that the pipeline adheres to data management protocols. For researchers, this means adding testing to their tool kits and automating such tasks through continuous integration that can provide rapid feedback when a component fails and maintain a reliable pipeline.
 </div>
 
 
@@ -235,7 +217,7 @@ The components are the tools used in software development to address inconsisten
 
 <div class="notes">
 The project level is essentially an area where we focus on the "plan" or scope of the research outcome.
-By scoping out the processes needed, identifying stakeholders and how to collaborate and communicate results then directs us to design the discrete stages of the pipeline in our chosen scripting language.
+By scoping out the processes needed, identifying stakeholders and how to collaborate and communicate results then directs us to design the discrete stages of the pipeline and or our chosen scripting language.
 </div>
 
 ## Pipeline {data-transition="fade-in fade-out"}
@@ -245,7 +227,7 @@ By scoping out the processes needed, identifying stakeholders and how to collabo
 </div>
 
 <div class="notes">
-The pipeline is where the discrete stages are processed by implementing the components in such a way as to meet the design requirements outlined in the scope. Continuous integration can be setup to meet automation requirements such as weekly data reports and more importantly testing expected functionality of the code, the version control system gives the advantage of rolling back errors or feature testing before merging into the master branch and finally, a container preserves the library and dependencies at runtime. 
+The pipeline is where the discrete stages are processed by implementing the components in such a way as to meet the design requirements outlined in the scope. Continuous integration can be setup to meet automation requirements as needed such as weekly data reports and more importantly testing expected functionality of the code, the version control system gives the advantage of rolling back errors or feature testing before merging into the master branch and finally, a container preserves the library and dependencies at runtime. 
 </div>
 
 ## Research Outcome {data-transition="fade-in fade-out"}
@@ -265,7 +247,8 @@ Each of the components in the pipeline addresses a reproducible outcome. Contain
 </div>
 
 <div class="notes">
-Ideally to have this at the onset of a project would be nice however, going through this process can also be beneficial during a project. This can also be adopted by a single researcher or scaled to larger collaborative research projects. To conclude, modern research methods need a modern approach and as journals adopt policies for sharing data, researchers can benefit from ResOps best practice to increase computational reproducibility & transparency by project managing the data and code as a software product. 
+Ideally to have this at the onset of a project would be nice however, going through this process can also be beneficial during a project. This can also be adopted by a single researcher or scaled to larger collaborative research projects. 
+To conclude, modern research methods need a modern approach and as journals adopt policies for sharing data, researchers can benefit from ResOps best practice to increase computational reproducibility & transparency by project managing the data and code as a software product. 
 </div>
 
 ## Thank You! 
@@ -277,5 +260,3 @@ Ideally to have this at the onset of a project would be nice however, going thro
 <a href="https://twitter.com/Elliot_Gould_" class="fa fa-twitter"></a>
 
 ## {data-background-iframe="ref.html"}
-
-
