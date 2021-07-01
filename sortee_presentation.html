@@ -474,7 +474,7 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <p>The ability to produce equivalent analytical outcomes from the same data set using the same code and software as the original study (Fidler et al., 2017).</p>
 </blockquote>
 <aside class="notes">
-<p>Computational Reproducibility refers to The ability to produce equivalent analytical outcomes from the same data set using the same code and software as the original study (Fidler et al., 2017). With this definition in mind we explored the current state of authors sharing code.</p>
+<p>Computational Reproducibility refers to the ability to produce equivalent analytical outcomes from the same data set using the same code and software as the original study (Fidler et al., 2017). Despite well-developed data and software sharing capabilities, it is still challenging to reproduce published results. Ecology both applied and basic face unique challenges to achieving reproducibility and transparency due to the types of studies, data collection methods, and data types that are prevalent in these disciplines.</p>
 </aside>
 </section>
 <section id="challenges-in-ecology" class="slide level2">
@@ -603,7 +603,7 @@ FAIR, TRUST principles, standardised templates and metadata, workflows for produ
 </table>
 </section>
 <aside class="notes">
-<p>Despite well-developed data and software sharing capabilities, it is still challenging to reproduce published results. Ecology both applied and basic, and evolutionary biology face unique challenges to achieving reproducibility and transparency due to both the types of studies and the types of data and data collection methods that are prevalent in these disciplines. And here is a non-exhaustive set of challenges: Many long-term observational or monitoring studies, near-term forecasting or adaptive management programs or experiments with repeated sampling face the challenge of regularly updated data, which requires active data management, continual data entry, processing, integration and error checking. This places a large burden on small teams without rapid deployment protocols and automated workflows, and reproducibility is extremely difficult to achieve. Data freshness or the time between data collection and data use is difficult to track due to variation in reporting practices, and unknown data freshness or stale data may increase uncertainty and decrease accuracy in conclusions reached.</p>
+<p>And here is a non-exhaustive set of challenges: Many long-term observational or monitoring studies, near-term forecasting or adaptive management programs or experiments with repeated sampling face the challenge of regularly updated data, which requires active data management, continual data entry, processing, integration and error checking. This places a large burden on small teams without rapid deployment protocols and automated workflows, and reproducibility is extremely difficult to achieve. Data freshness or the time between data collection and data use is difficult to track due to variation in reporting practices, and unknown data freshness or stale data may increase uncertainty and decrease accuracy in conclusions reached.</p>
 <p>Complex ecological models or conservation-decision making programs often integrate and synthesise independently collected data from many different sources and of different types, but a lack of good metadata and data archiving practices means that nuances and details of data-collection and the study system are poorly documented. This risks data being misinterpreted and may pose statistical issues when integrating across sources and dimensions.</p>
 <p>Importantly, much ecological data is recorded by hand on data sheets in the field or in lab notebooks, risking errors because of a lack of enforced schemas during in recording, and a lack of QA/QC at the time of data entry.</p>
 <p>Conversely, bio-logging and automated sensors such as camera traps, geo-location tracking, and remote sensing data are becoming increasingly common, however, there is a huge burden on researchers wanting to either share or reuse bio-logging data because of a lack of data-archiving standards and general processing workflows.</p>
@@ -623,7 +623,7 @@ FAIR, TRUST principles, standardised templates and metadata, workflows for produ
 <li class="fragment">Good Research Practices.</li>
 </ul>
 <aside class="notes">
-<p>Archmiller et al., (2020) explored the level of computational reproducibility in the field of wildlife science. Found 74 suitable for CR of the 19 obtained 13 were able to mostly or fully reproduce. <strong>They concluded by recommending an increase code sharing, organization and documentation and training</strong>.</p>
+<p>Archmiller et al., (2020) explored the level of computational reproducibility in the field of wildlife science. Found 74 suitable for CR of the 19 obtained 13 were able to mostly or fully reproduce. <strong>They concluded by recommending increase of code sharing, organization and documentation and training</strong>.</p>
 <p>Obels et al., (2020) tried to reproduce results from registered psychology reports between 2014 to 2018. 62 articles identified, 41 had data available and 37 had analysis scripts. They could run scripts for 31 analysis and reproduced main results for 21 articles. <strong>They too recommend good research practices</strong>.</p>
 </aside>
 </section>
@@ -662,18 +662,12 @@ FAIR, TRUST principles, standardised templates and metadata, workflows for produ
 <h2>Modern Scientific Research</h2>
 <ul>
 <li class="fragment">No differences between researchers from computer science (Yasmin AlNoamany &amp; John A. Borghi, 2018).</li>
-</ul>
-<ul>
 <li class="fragment">Computational reproducibility best approached by focusing on software as a product (Hocquet &amp; Wieber, 2021).</li>
+<li class="fragment">More easily achieve computational reproducibiltiy.</li>
 <li class="fragment">“<em>Product</em>” is the reproducible outcome built around a scientific workflow.</li>
 </ul>
-<ul>
-<li class="fragment">more easily achieve computational reproducibiltiy.</li>
-</ul>
 <aside class="notes">
-<p>There is little difference between research and computer science and related disciplines in the use of software engineering. As modern scientific researchers, the tools and approaches we use when developing analysis code and software, don’t actually differ substantially from software engineering - we just don’t conceptualise the computational aspects of our research as software engineering.</p>
-<p>Furthermore, computational reproducibility is best approached by focusing on the research process as a software product. Product in the scientific sense is the reproducible outcome built around scientific workflow.<br />
-By treating our analysis code and software as a product we can more easily achieve computational reproducibiltiy.</p>
+<p>As modern scientific researchers, the tools and approaches we use when developing analysis code and software, don’t actually differ substantially from software engineering - we just don’t conceptualise the computational aspects of our research as software engineering. By treating our analysis code and software as a product we can more easily achieve computational reproducibiltiy. <em>Product</em> is the reproducible outcome built around a scientific workflow.</p>
 </aside>
 </section>
 <section id="researchops" class="slide level2">
@@ -732,7 +726,7 @@ By treating our analysis code and software as a product we can more easily achie
 <p><img src="figures/resops_3.png" style="background-color:transparent; border:0px; box-shadow:none;"></img></p>
 </div>
 <aside class="notes">
-<p>Each of the components in the pipeline addresses a reproducible outcome. Containers such as Docker or Reprozip ensure long term preservation of the methods and results by wrapping the entire process, documentation and results into an executable format. This can then be shared with the published paper for peer reviewing and computational reproducibility.</p>
+<p>Each of the components in the pipeline addresses a reproducible outcome. Containers such as Docker or Reprozip ensure long term preservation of the methods and results by wrapping the entire process, documentation and results into an executable format. This can then be shared alongside the published paper for code review, computational reproducibility, replication and reuse by others. Users can access the data and analysis products, querying the existing analysis in new ways, or with new data, or reusing parts of the pipeline in new studies.</p>
 </aside>
 </section>
 <section id="researchops-framework-1" class="slide level2" data-transition="fade-in fade-out">
@@ -741,7 +735,7 @@ By treating our analysis code and software as a product we can more easily achie
 <p><img src="figures/resops_framework.png" style="background-color:transparent; border:0px; box-shadow:none;"></img></p>
 </div>
 <aside class="notes">
-<p>Ideally to have this at the onset of a project would be nice however, going through this process can also be beneficial during a project. This can also be adopted by a single researcher or scaled to larger collaborative research projects. To conclude, modern research methods need a modern approach and as journals adopt policies for sharing data, researchers can benefit from ResOps best practice to increase computational reproducibility &amp; transparency by project managing the data and code as a software product.</p>
+<p>Ideally to have this framework at the onset of a project would be nice however, going through this process can also be beneficial during a project. This can also be adopted by a single researcher or scaled to larger collaborative research projects. To conclude, modern research methods need a modern approach and as journals adopt policies for sharing data, and code, researchers can benefit from ResOps best practice to increase computational reproducibility &amp; transparency by project managing the data and code as a software product.</p>
 </aside>
 </section>
 <section id="thank-you" class="slide level2">

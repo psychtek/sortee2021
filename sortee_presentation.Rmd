@@ -35,7 +35,9 @@ Without formal training in code and workflow building, code development is typic
 > The ability to produce equivalent analytical outcomes from the same data set using the same code and software as the original study  (Fidler et al., 2017).
 
 <div class="notes">
-Computational Reproducibility refers to The ability to produce equivalent analytical outcomes from the same data set using the same code and software as the original study (Fidler et al., 2017). With this definition in mind we explored the current state of authors sharing code.
+Computational Reproducibility refers to the ability to produce equivalent analytical outcomes from the same data set using the same code and software as the original study (Fidler et al., 2017).
+Despite well-developed data and software sharing capabilities, it is still challenging to reproduce published results.
+Ecology both applied and basic face unique challenges to achieving reproducibility and transparency due to the types of studies, data collection methods, and data types that are prevalent in these disciplines.
 </div>
 
 ## Challenges in Ecology
@@ -93,7 +95,7 @@ Computational Reproducibility refers to The ability to produce equivalent analyt
 </section>
 
 <div class="notes">
- Despite well-developed data and software sharing capabilities, it is still challenging to reproduce published results. Ecology both applied and basic, and evolutionary biology face unique challenges to achieving reproducibility and transparency due to both the types of studies and the types of data and data collection methods that are prevalent in these disciplines. 
+
 And here is a non-exhaustive set of challenges:
 Many long-term observational or monitoring studies, near-term forecasting or adaptive management programs or experiments with repeated sampling face the challenge of regularly updated data, which requires active data management, continual data entry, processing, integration and error checking. This places a large burden on small teams without rapid deployment protocols and automated workflows, and reproducibility is extremely difficult to achieve.
 Data freshness or the time between data collection and data use is difficult to track due to variation in reporting practices, and unknown data freshness or stale data may increase uncertainty and decrease accuracy in conclusions reached.
@@ -117,7 +119,7 @@ Conversely, bio-logging and automated sensors such as camera traps,  geo-locatio
 > - Good Research Practices.
 
 <div class="notes">
-Archmiller et al., (2020) explored the level of computational reproducibility in the field of wildlife science. Found 74 suitable for CR of the 19 obtained 13 were able to mostly or fully reproduce. **They concluded by recommending an increase code sharing, organization and documentation and training**. 
+Archmiller et al., (2020) explored the level of computational reproducibility in the field of wildlife science. Found 74 suitable for CR of the 19 obtained 13 were able to mostly or fully reproduce. **They concluded by recommending increase of code sharing, organization and documentation and training**. 
 
 Obels et al., (2020) tried to reproduce results from registered psychology reports between 2014 to 2018. 62 articles identified, 41 had data available and 37 had analysis scripts. They could run scripts for 31 analysis and reproduced main results for 21 articles. **They too recommend good research practices**.
 </div>
@@ -155,19 +157,13 @@ DevOps is commonly used to describe a suit of tools such as ***version control, 
 ## Modern Scientific Research
 
 > - No differences between researchers from computer science (Yasmin AlNoamany & John A. Borghi, 2018).
-
 > - Computational reproducibility best approached by focusing on software as a product (Hocquet & Wieber, 2021).
+> - More easily achieve computational reproducibiltiy.
 > - "*Product*" is the reproducible outcome built around a scientific workflow. 
 
-> -  more easily achieve computational reproducibiltiy.
-
-
 <div class="notes">
-There is little difference between research and computer science and related disciplines in the use of software engineering. 
 As modern scientific researchers, the tools and approaches we use when developing analysis code and software, don’t actually differ substantially from software engineering - we just don’t conceptualise the computational aspects of our research as software engineering.
-
-Furthermore, computational reproducibility is best approached by focusing on the research process as a software product. Product in the scientific sense is the reproducible outcome built around scientific workflow.  
-By treating our analysis code and software as a product we can more easily achieve computational reproducibiltiy.
+By treating our analysis code and software as a product we can more easily achieve computational reproducibiltiy. *Product* is the reproducible outcome built around a scientific workflow.
 </div>
 
 ## ResearchOps
@@ -237,7 +233,8 @@ The pipeline is where the discrete stages are processed by implementing the comp
 </div>
 
 <div class="notes">
-Each of the components in the pipeline addresses a reproducible outcome. Containers such as Docker or Reprozip ensure long term preservation of the methods and results by wrapping the entire process, documentation and results into an executable format. This can then be shared with the published paper for peer reviewing and computational reproducibility. 
+Each of the components in the pipeline addresses a reproducible outcome. Containers such as Docker or Reprozip ensure long term preservation of the methods and results by wrapping the entire process, documentation and results into an executable format. This can then be shared alongside the published paper for code review, computational reproducibility, replication and reuse by others. Users can access the data and analysis products, querying the existing analysis in new ways, or with new data, or reusing parts of the pipeline in new studies.
+
 </div>
 
 ## ResearchOps Framework {data-transition="fade-in fade-out"}
@@ -247,8 +244,8 @@ Each of the components in the pipeline addresses a reproducible outcome. Contain
 </div>
 
 <div class="notes">
-Ideally to have this at the onset of a project would be nice however, going through this process can also be beneficial during a project. This can also be adopted by a single researcher or scaled to larger collaborative research projects. 
-To conclude, modern research methods need a modern approach and as journals adopt policies for sharing data, researchers can benefit from ResOps best practice to increase computational reproducibility & transparency by project managing the data and code as a software product. 
+Ideally to have this framework at the onset of a project would be nice however, going through this process can also be beneficial during a project. This can also be adopted by a single researcher or scaled to larger collaborative research projects. 
+To conclude, modern research methods need a modern approach and as journals adopt policies for sharing data, and code, researchers can benefit from ResOps best practice to increase computational reproducibility & transparency by project managing the data and code as a software product. 
 </div>
 
 ## Thank You! 
