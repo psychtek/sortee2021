@@ -17,38 +17,115 @@ output:
 
 ## Research Code 
 
-> - Source code generated each year grows by about 20%.<small>(L. Hatton & M. van Genuchten, 2019)</small>
-> - Data handling and processing often informally transmitted.
-> - Lack of formal training for researchers.<small>(Koehler Leman et al., 2020)</small>
+> - Source code generated each year grows by about 20% (L. Hatton & M. van Genuchten, 2019).
+> - Sharing policy increase: 15% in 2015 to 75% in 2020 (Culina et al., 2018).
+> - Data handling and processing often informally transmitted (Maer-Matei et al., 2019).
+> - Lack of formal training for researchers (Koehler Leman et al., 2020).
+
 > - Best practice for computational reproducibility?
 > - How to navigate the available tools? 
 
 <div class="notes">
-The amount of source code generated for research continues to grow each year by about 20% (L. Hatton & M. van Genuchten, 2019)  and although code sharing policies have been adopted by journals, from 15% in 2015 to 75% in 2020, code sharing from authors is still rather poor.
-With such policy growth comes much responsibility as the demand for reproducible workflows and transparent research practices grows so does a need for industry best practice. 
-
-Modern computational methods are an essential skill in today's scientific methodology. Computational research skills such as data handling and processing are often informally transmitted yet are essential skills for early career researchers often found on advertising platforms (Maer-Matei et al., 2019). Coding is often an ad-hoc process that is applied over the course of a projects life and, a lack of formal training for researchers (Koehler Leman et al., 2020) without much forethought to how to structure a scientific work flow for later reproduction. Data is often an active process of collection, cleaning, analysis and delivery yet the function of a published paper is rather static. What approach can we as scientist utilize to achieve transparency and computational reproducibility? How can we modernize our workflows to merge the static and dynamic processes of the scientific method? How do modern researchers navigate the plethora of tools available? Why the mismatch between code availability and increase in code sharing policy?
+The amount of **source code generated for research continues to grow each year by about 20%** (L. Hatton & M. van Genuchten, 2019)  and although code sharing **policies** have been adopted by journals, from 15% in 2015 to 75% in 2020, code sharing from **authors** is still rather poor. As the demand for reproducible workflows and transparent research practices grows so does a need for industry best practice. 
+Modern computational methods are an essential skill in today's scientific methodology. Computational research skills such as data **handling and processing are often informally transmitted** yet are essential skills for early career researchers often found on advertising platforms (Maer-Matei et al., 2019). Coding is often an ad-hoc process that is applied over the course of a projects life and, a **lack of formal training for researchers** (Koehler Leman et al., 2020) without much forethought to how to structure a scientific work flow for preservation and reproduction. 
 </div>
+
+## Challenges to Ecology
+
+<section>
+  <table class="reveal">
+    <tr>
+      <td><b>Challenge</b></td>
+      <td><b>Cause or mechanism</b></td>
+      <td><b>Examples</b></td>
+      <td><b>Consequences</b></td>
+      <td><b>Solutions</b></td>
+      <td><b>Source</b></td>
+    </tr>
+    <tr class="fragment">
+      <td>Regularly Updated Data</td>
+      <td>Requires active data management, continual data entry, data processing and integration and error checking because data are continually changing.</td>
+      <td>long-term observational studies, experiments with repeated sampling, use of automatic sensors, ongoing literature mining, iterative near-term forecasting, adaptive management</td>
+      <td>Large burden on small teams without rapid and automated protocols. Data analysis prone to errors without QA/QC protocols. Reproducibility difficult to achieve without pipeline workflows.</td>
+      <td>version-control, automated testing, continuous integration and analysis</td>
+      <td>Yenni et al., (2019)</td>
+    </tr>
+    <tr class="fragment">
+      <td>'Data 'freshness' or the time between data collection and data use.</td>
+      <td>Data freshness is difficult to track due to variation in reporting practices. This difficulty is increased when many data sources are combined. Unknown data freshness or stale data may increase uncertainty and decrease accuracy in conclusions reached. </td>
+      <td>SDM's where predictor variables do not capture recent environmental changes, such as rapid habitat loss, or where occurrence records do not coincide with period from which predictor variable captured</td>
+      <td>Poor model performance, reduced accuracy of predictions in areas of rapid environmental change, increased risk of negative outcomes of conservation decisions</td>
+      <td>Good metadata that includes temporal aspects of original data collection.</td>
+      <td>Murray et al., (2021)</td>
+    </tr>
+    <tr class="fragment">
+      <td>Integrating and synthesising independently collected data from many sources</td>
+      <td>Ecological data often context specific, with many nuances and details in the study-system being poorly documented. Methods section limits are too small to capture full suite of details.</td>
+      <td>Complex modelling studies, conservation-decision-making studies, model transfers</td>
+      <td>Data are easily misinterpreted, biases unknown, and may pose statistical issues when integrating across multiple dimensions and sources.</td>
+      <td>use of FAIR data principles (FAIR: Findable, Accessible, Interoperable and Reusable), use of TRUST principles: Transparency, Responsibility, User focus, Sustainability and Technology, data archiving practices that adheres to these principles.</td>
+      <td>Culina et al., (2018)</td>
+    </tr>
+    <tr class="fragment">
+      <td>Manual / hard-copy data entry</td>
+      <td>data collected on data sheets in the field or lab. Data structure not enforced by hand-recording, mistakes in data entry.</td>
+      <td>Hard-copy, free-hand field-data recording. Experimental protocols and results recorded by hand in lab-notebooks. </td>
+      <td>Errors in data entry may result in serious errors in conclusions, especially if systematic bias in recording errors.</td>
+      <td>Digital data recording with the use of schemas to enforce required data structure. Automated testing or QA/QC upon data entry.</td>
+      <td>Yenni et al., (2019)</td>
+    </tr>
+    <tr class="fragment">
+      <td>Bio-logging and automated sensors</td>
+      <td>Ongoing QA/QC and data processing necessary, no standards for archiving data, most data are undiscoverable and inaccessible.</td>
+      <td>Camera traps, weather data, geo-location tracking, remote sensing or drone data, bio-logging data</td>
+      <td>Burden on researchers wanting to either share or reuse bio-logging data, datasets unable to be merged.</td>
+      <td>FAIR, TRUST principles,  standardised  templates and metadata, workflows for producing archive-quality data files/td>
+      <td>(Sequeira et al., 2021)</td></tr>
+   </table>
+</section>
+
+<div class="notes">
+ Despite well-developed data and software sharing capabilities, it is still challenging to reproduce published results. Ecology both applied and basic, and evolutionary biology face unique challenges to achieving reproducibility and transparency due to both the types of studies and the types of data and data collection methods that are prevalent in these disciplines. 
+And here is a non-exhaustive set of challenges:
+Many long-term observational or monitoring studies, near-term forecasting or adaptive management programs or experiments with repeated sampling face the challenge of regularly updated data, which requires active data management, continual data entry, processing, integration and error checking. This places a large burden on small teams without rapid deployment protocols and automated workflows, and reproducibility is extremely difficult to achieve.
+Data freshness or the time between data collection and data use is difficult to track due to variation in reporting practices, and unknown data freshness or stale data may increase uncertainty and decrease accuracy in conclusions reached.
+
+Complex ecological models or conservation-decision making programs often integrate and synthesise independently collected data from many different sources and of different types, but a lack of good metadata and data archiving practices means that nuances and details of data-collection and the study system are poorly documented. This risks data being misinterpreted and may pose statistical issues when integrating across sources and dimensions.
+
+Importantly, much ecological data is recorded by hand on data sheets in the field or in lab notebooks, risking errors because of a lack of enforced schemas during in recording, and a lack of QA/QC at the time of data entry.
+
+Conversely, bio-logging and automated sensors such as camera traps,  geo-location tracking, and remote sensing data are becoming increasingly common, however, there is a huge burden on researchers wanting to either share or reuse bio-logging data because of a lack of data-archiving standards and general processing workflows.
+</div>
+
 
 ## Computational Reproducibility
 
 > The ability to produce equivalent analytical outcomes from the same data set using the same code and software as the original study  (Fidler et al., 2017).
 
+<div class="notes">
+
+What approach can we as scientists utilize to achieve transparency and computational reproducibility? 
+How can we modernize our workflows to meet increasing data sharing requirements? 
+How do modern researchers navigate the plethora of tools available? 
+Why the mismatch between code availability and increase in code sharing policy?
+
+Computational Reproducibility refers to The ability to produce equivalent analytical outcomes from the same data set using the same code and software as the original study (Fidler et al., 2017). With this definition in mind we explored the current state of authors sharing code.
+</div>
 
 ## Have You Reproduced Lately?
 
-> - Archmiller et al., (2020) Found 74 suitable for CR of the 19 *obtained* **13 were able to mostly or fully reproduce**.
+> - Archmiller et al., (2020) Found 74 suitable for CR of the 19 obtained 13 were able to mostly or fully reproduce.
  
-> - Obels et al., (2020) 62 articles identified, 41 had data available and 37 had analysis scripts. **Could run scripts for 31 analysis and reproduced main results for 21 articles**.
+> - Obels et al., (2020) 62 articles identified, 41 had data available and 37 had analysis scripts Ran scripts for 31 analysis and reproduced main results for 21 articles.
 
 > - Increase Code Sharing.
 > - Organization and Documentation and Training.
 > - Good Research Practices.
 
 <div class="notes">
-Archmiller et al., (2020) explored the level of computational reproducibility in the field of wildlife science. Found 74 suitable for CR of the 19 obtained 13 were able to mostly or fully reproduce. They concluded by recommending an increase code sharing, organization and documentation and training. 
+Archmiller et al., (2020) explored the level of computational reproducibility in the field of wildlife science. Found 74 suitable for CR of the 19 obtained 13 were able to mostly or fully reproduce. **They concluded by recommending an increase code sharing, organization and documentation and training**. 
 
-Obels et al., (2020) tried to reproduce results from registered psychology reports between 2014 to 2018. 62 articles identified, 41 had data available and 37 had analysis scripts. They could run scripts for 31 analysis and reproduced main results for 21 articles. They too recommend good research practices.
+Obels et al., (2020) tried to reproduce results from registered psychology reports between 2014 to 2018. 62 articles identified, 41 had data available and 37 had analysis scripts. They could run scripts for 31 analysis and reproduced main results for 21 articles. **They too recommend good research practices**.
 </div>
 
 ## {data-background="figures/bestpract.jpg"} 
@@ -61,22 +138,23 @@ What constitutes best practice?
 
 > - Lack of a workflow framework.
 > - Missing software dependencies.
-> - Excluded data manipulation steps <small>(Leipzig et al., 2020)</small>
+> - Excluded data manipulation steps (Leipzig et al., 2020).
 
 <div class="notes">
+A common source of the inability to reproduce data and code is the lack of a **workflow framework**, missing **software dependencies** and **excluded data manipulation** steps (Leipzig et al., 2020).
 We need to identify what **is** best practice and identify the discrepancy between code sharing attitudes and the reproduction results. 
-What tools and components should we use in our scientific workflows? A common source of the inability to reproduce data and code is the lack of a workflow framework, missing software dependencies and excluded data manipulation steps (Leipzig et al., 2020). A problem that is addressed in the software engineering domain through Devops.
+What tools and components should we use in our scientific workflows?  A problem that is addressed in the software engineering domain through Devops that researchers could benefit from.
 </div>
 
-## DevOps?
+<!-- ## DevOps? -->
 
-<div align=center>
-<img src="figures/devops_cycle.png" style="background-color:transparent; border:0px; box-shadow:none;"></img>
-</div>
+<!-- <div align=center> -->
+<!-- <img src="figures/devops_cycle.png" style="background-color:transparent; border:0px; box-shadow:none;"></img> -->
+<!-- </div> -->
 
-<div class="notes">
-DevOps (Development / Operations) is a cultural movement that aims the collaboration among stakeholders involved in the development, deployment and operation of software, to deliver a high-quality product or service in the shortest possible time. Although the scientific method doesnt necessarily have the time constraint, we can adopt this culture into our research skill set. 
-</div>
+<!-- <div class="notes"> -->
+<!-- DevOps (Development / Operations) is a cultural movement that aims the collaboration among stakeholders involved in the development, deployment and operation of software, to deliver a high-quality product or service in the shortest possible time. Although the scientific method doesnt necessarily have the time constraint, we can adopt this culture into our research skill set.  -->
+<!-- </div> -->
 
 ## DevOps
 
@@ -86,31 +164,29 @@ DevOps (Development / Operations) is a cultural movement that aims the collabora
 > - **Testing**: Expected constraints at output.
 
 <div class="notes">
-DevOps is now more commonly used to describe a suit of tools such as version control, infrastructure as code, virtualization, continuous delivery/deployment & testing. Unsurprisingly or perhaps surprisingly, scientists already are adopting these tools in their pipelines. Version control is incorporated into Github, virtualization has now taken the form of containers like Docker and CI/CD can be used with Github Actions, Gitlab CI or Travis-CI. That is, take the already existing practices and tools from DevOps and integrate these into a best practice approach using commonly adopted tools already being implemented in scientific community and, treat the scientific workflow as software product.
+DevOps is commonly used to describe a suit of tools such as ***version control, infrastructure as code, virtualization, continuous delivery/deployment & testing**. Unsurprisingly or perhaps surprisingly, scientists already are adopting these tools in their pipelines. Version control is incorporated into Github, virtualization has now taken the form of containers like Docker and CI/CD can be used with Github Actions, Gitlab CI or Travis-CI. That is, take the already existing practices and tools from DevOps and integrate these into a best practice approach using commonly adopted tools already being implemented in scientific community and, treat the scientific workflow as software product.
 </div>
 
 ## Modern Researchers
 
-> - No differences between researchers from computer science. <small>(Yasmin AlNoamany & John A. Borghi, 2018)</small>
+> - No differences between researchers from computer science (Yasmin AlNoamany & John A. Borghi, 2018).
 
-> - Computational reproducibility best approached by focusing on software as a product. <small>(Hocquet & Wieber, 2021)</small>
+> - Computational reproducibility best approached by focusing on software as a product (Hocquet & Wieber, 2021).
 
 > - "*Product*" is the reproducible outcome built around a scientific workflow. 
 
 
 <div class="notes">
-There is little difference between research and computer science and related disciplines in the use of software engineering. Furthermore, computational reproducibility is best approached by focusing on the research process as a software product. Product in the scientific sense is the reproducible outcome built around scientific workflow. ResearchOps is presented here as a case for scientific applications. 
+There is little difference between research and computer science and related disciplines in the use of software engineering. Furthermore, computational reproducibility is best approached by focusing on the research process as a software product. Product in the scientific sense is the reproducible outcome built around scientific workflow.  
 </div>
 
 ## ResearchOps
 
-The Case for DevOps in Scientific Applications  <small>(de Bayser et al., 2015)</small>
+The Case for DevOps in Scientific Applications (de Bayser et al., 2015)
 
-> - increase scientific productivity  (Peikert & Brandmaier, 2019); 
-
-> - collaborate effectively within and between researchers (Díaz et al., 2019) and; 
-
-> - aid in computational reproducibility  (Beaulieu-Jones & Greene, 2017) and transparency of their work  (Wittman & Aukema, 2020).
+> - Increase scientific productivity (Peikert & Brandmaier, 2019)
+> - Collaborate effectively within and between researchers (Díaz et al., 2019) 
+> - Aid in computational reproducibility and transparency of their work (Beaulieu-Jones & Greene, 2017; Wittman & Aukema, 2020)
 
 > - **Does this mean we have to learn computer science & multiple programming languages?**
 
@@ -118,6 +194,17 @@ The Case for DevOps in Scientific Applications  <small>(de Bayser et al., 2015)<
 The application of the DevOps, orchestrated into a seamless integrated process can increase productivity, collaborate effectively within and between research members and teams and, aid in computational reproducibility and transparency of their work. ResearchOps helps modern scientists stand out from DevOps and define our objectives differently in the sense to preserve and modernise our methods for replication. 
 Does this mean we have to learn computer science & multiple programming languages? No. As we will see identifying the scope of the research project at the onset can help build a framework for a scientific workflow and provide direction on what tools to implement. Most of the tools of which are freely available as open source and already used in the scientific community. 
 </div>
+
+## Examples 
+
+> - White et al., (2019) Ecological forecast system  - Using **R** to work with data and fit models, make forecasts and archive for delivery to stakeholders. Created a **automated pipeline** using **CI** to run once a week. 
+
+> - Yenni et al., (2019) Biology example using existing open source tools by performing **QA**, import, restructure data, **versioning** and archiving, rapid publishing(delivery), **automate** steps to reduce time. 
+
+<div class="notes">
+**Examples** from ecology and biology demonstrate that using open source tools to automate a data pipeline can deliver up to date data and forecasting, reduce analysis time and deliver results to stakeholders. The scientific community already has certainly increased the uptake of using such tools however, in order to encourage authors' to share code a conceptual framework is needed to structure the scientific workflow.  
+</div>
+
 
 ## Worfkflows, Pipelines & Components! Oh My!
 > - **Scientific Workflow**: Overall scope of the research project.
@@ -127,20 +214,12 @@ Does this mean we have to learn computer science & multiple programming language
 
 <div class="notes">
 To conceptualise this easier we look at researchops as three areas of focus: The project management level or scope, the pipeline and the components. 
-Scientific workflows represent complex design pipelines that capture processing requirements for researchers throughout their investigations that allow the execution of data collection, data flow, computation, analysis in an integrative method to deliver and publish results (Catlin et al., 2019). This is the project management level. The pipeline and components work together.
+**Scientific workflows** represent complex design pipelines that capture processing requirements for researchers throughout their investigations that allow the execution of data collection, data flow, computation, analysis in an integrative method to deliver and publish results (Catlin et al., 2019). **This is the project management level.** The pipeline and components work together.
+
 The pipeline is a set of discrete stages in which a series of automated transformations and tests are performed on the raw data. Each stage is identified through the overall scope of the scientific workflow so that each stage has a purpose. 
 The components are the tools used in software development to address inconsistencies in code through automated testing and quality assurance measures so that the product maintains a standard before deployment or delivery. This ensures that the pipeline adheres to data management protocols. For researchers, this means adding testing to their tool kits and automating such tasks through continuous integration that can provide rapid feedback when a component fails and maintain a reliable pipeline. Testing is something that has not been fully adopted in modern scientific methods. This could explain as to why some previous computational reproduction attempts have not been as successful. 
 </div>
 
-## Examples 
-
-> - (White et al., 2019) Ecological forecast system  - Using **R** to work with data and fit models, make forecasts and archive for delivery to stakeholders. Created a **automated pipeline** using **CI** to run once a week. 
-
-> - (Yenni et al., 2019) Biology example using existing open source tools by performing **QA**, import, restructure data, **versioning** and archiving, rapid publishing(delivery), **automate** steps to reduce time. 
-
-<div class="notes">
-Examples from ecology and biology demonstrate that adopting ResearchOps approach enables up to date data and forecasting, reduces analysis time and deliver results to stakeholders. Additionally, using freely available open source tools. 
-</div>
 
 ## ResearchOps Framework {data-transition="zoom-in"}
 
@@ -156,7 +235,7 @@ Examples from ecology and biology demonstrate that adopting ResearchOps approach
 
 <div class="notes">
 The project level is essentially an area where we focus on the "plan" or scope of the research outcome.
-By scoping out the processes needed, indentyfing stakeholders and how to collaborate and communicate results then directs us to design the discrete stages of the pipeline in our chosen scripting language.
+By scoping out the processes needed, identifying stakeholders and how to collaborate and communicate results then directs us to design the discrete stages of the pipeline in our chosen scripting language.
 </div>
 
 ## Pipeline {data-transition="fade-in fade-out"}
@@ -166,7 +245,7 @@ By scoping out the processes needed, indentyfing stakeholders and how to collabo
 </div>
 
 <div class="notes">
-The pipeline is where the discrete stages are processed by implementing the components from DevOps in such a way as to meet the design requirements outlined in the scope. Continuous integration can be setup to meet automation requirements such as weekly data reports and more importantly testing expected functionality of the code, the version control system gives the advantage of rolling back errors or feature testing before merging into the master branch and finally, a container preserves the library and dependencies at runtime. 
+The pipeline is where the discrete stages are processed by implementing the components in such a way as to meet the design requirements outlined in the scope. Continuous integration can be setup to meet automation requirements such as weekly data reports and more importantly testing expected functionality of the code, the version control system gives the advantage of rolling back errors or feature testing before merging into the master branch and finally, a container preserves the library and dependencies at runtime. 
 </div>
 
 ## Research Outcome {data-transition="fade-in fade-out"}
@@ -186,13 +265,17 @@ Each of the components in the pipeline addresses a reproducible outcome. Contain
 </div>
 
 <div class="notes">
-Ideally to have this at the onset of a project would be nice however, going through this process can also be beneficial during a project. This can also be adopted by a single researcher or scaled to larger collaborative research projects. To conclude, modern research methods need a modern approach and as journals adopt policies for sharing data, researchers can benefit from ResOps best practice to increase computational reproducibility & transparency. 
+Ideally to have this at the onset of a project would be nice however, going through this process can also be beneficial during a project. This can also be adopted by a single researcher or scaled to larger collaborative research projects. To conclude, modern research methods need a modern approach and as journals adopt policies for sharing data, researchers can benefit from ResOps best practice to increase computational reproducibility & transparency by project managing the data and code as a software product. 
 </div>
 
 ## Thank You! 
+
 <span style="color: #808080;"><em><a href="https://twitter.com/aaron_willcox">@aaron_willcox</a></em></span>
 <a href="https://twitter.com/aaron_willcox" class="fa fa-twitter"></a>
 
 <span style="color: #808080;"><em><a href="https://twitter.com/Elliot_Gould_">@Elliot_Gould_</a></em></span>
 <a href="https://twitter.com/Elliot_Gould_" class="fa fa-twitter"></a>
+
+## {data-background-iframe="ref.html"}
+
 

@@ -171,7 +171,8 @@ body {
 .reveal table th,
 .reveal table td {
   text-align: left;
-  padding: 0.2em 0.5em 0.2em 0.5em;
+  font-size: 10px;
+  padding: 0.1em 0.2em 0.1em 0.2em;
   border-bottom: 1px solid; }
 
 .reveal table th[align="center"],
