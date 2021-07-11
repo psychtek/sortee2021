@@ -151,14 +151,14 @@ What approach can we as scientists utilize to achieve transparency and computati
 > - **Testing**: Expected constraints at output.
 
 <div class="notes">
-DevOps is commonly used to describe a suit of tools such as ***version control, infrastructure as code, virtualization, continuous delivery/deployment & testing**. Unsurprisingly or perhaps surprisingly, scientists already are adopting these tools in their pipelines. Version control is incorporated into Github, virtualization has now taken the form of containers like Docker and CI/CD can be used with Github Actions, Gitlab CI or Travis-CI. That is, take the already existing practices and tools from DevOps and integrate these into a best practice approach using commonly adopted tools already being implemented in scientific community and, treat the scientific workflow as software product.
+DevOps is commonly used to describe a suit of tools such as ***version control, containers, continuous delivery/deployment & testing**. Unsurprisingly or perhaps surprisingly, scientists already are adopting these tools in their pipelines. Version control is incorporated into Github, virtualization has now taken the form of containers like Docker and CI/CD can be used with Github Actions, Gitlab CI or Travis-CI. That is, take the already existing practices and tools from DevOps and integrate these into a best practice approach using commonly adopted tools already being implemented in scientific community and, treat the scientific workflow as software product.
 </div>
 
 ## Modern Scientific Research
 
 > - No differences between researchers from computer science (Yasmin AlNoamany & John A. Borghi, 2018).
 > - Computational reproducibility best approached by focusing on software as a product (Hocquet & Wieber, 2021).
-> - More easily achieve computational reproducibiltiy.
+> - More easily achieve computational reproducibility.
 > - "*Product*" is the reproducible outcome built around a scientific workflow. 
 
 <div class="notes">
