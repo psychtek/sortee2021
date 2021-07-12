@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
   <meta name="author" content="Aaron Willcox | Elliot Gould" />
-  <meta name="dcterms.date" content="2021-07-11" />
+  <meta name="dcterms.date" content="2021-07-12" />
   <title>ReSearchOps: a principled framework and guide to computational reproducibility</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -453,7 +453,7 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <section>
     <h1 class="title">ReSearchOps: a principled framework and guide to computational reproducibility</h1>
     <h2 class="author">Aaron Willcox | Elliot Gould</h2>
-    <h3 class="date">2021-07-11</h3>
+    <h3 class="date">2021-07-12</h3>
 </section>
 
 <section id="research-code" class="slide level2">
@@ -693,7 +693,7 @@ FAIR, TRUST principles, standardised templates and metadata, workflows for produ
 <p>At a high-level, we consider three aspects of ResOps: The project management level or scope, the pipeline and the components.</p>
 <p>At the project management level is the scientific workflow. <strong>Scientific workflows</strong> represent complex design pipelines that capture processing requirements for researchers throughout their investigations that allow the execution of data collection, data flow, computation, analysis in an integrative method to deliver and publish results (Catlin et al., 2019).</p>
 <p>The pipeline is a set of discrete stages in which a series of automated transformations and tests are performed on the raw data. Each stage is identified through the overall scope of the scientific workflow so that each stage has a purpose.</p>
-<p>The components are the tools used in software development to address inconsistencies in code through automated testing and quality assurance measures so that the product maintains a standard before deployment or delivery. This ensures that the pipeline adheres to data management protocols. For researchers, this means adding testing to their tool kits and automating such tasks through continuous integration that can provide rapid feedback when a component fails and maintain a reliable pipeline.</p>
+<p>The components are the tools used in software development to address inconsistencies in code through automated testing and quality assurance measures so that the product maintains a standard before deployment or delivery. This ensures that the pipeline adheres to data management protocols. For researchers, this means adding testing to their tool kits and automating such tasks through continuous integration that can provide rapid feedback when a component fails to maintain a reliable pipeline.</p>
 </aside>
 </section>
 <section id="researchops-framework" class="slide level2" data-transition="zoom-in">
@@ -717,7 +717,7 @@ FAIR, TRUST principles, standardised templates and metadata, workflows for produ
 <p><img src="figures/resops_2.png" style="background-color:transparent; border:0px; box-shadow:none;"></img></p>
 </div>
 <aside class="notes">
-<p>The pipeline is where the discrete stages are processed by implementing the components in such a way as to meet the design requirements outlined in the scope. Continuous integration can be setup to meet automation requirements as needed such as weekly data reports and more importantly testing expected functionality of the code, the version control system gives the advantage of rolling back errors or feature testing before merging into the master branch and finally, a container preserves the library and dependencies at runtime.</p>
+<p>The pipeline is where the discrete stages are processed by implementing the components in such a way as to meet the design requirements outlined in the scope. Continuous integration can be setup to meet automation requirements as needed such as, weekly data reports and more importantly testing expected functionality of the code. The version control system gives the advantage of rolling back errors or feature testing before merging into the master branch and finally, a container preserves the library and dependencies at runtime.</p>
 </aside>
 </section>
 <section id="research-outcome" class="slide level2" data-transition="fade-in fade-out">
@@ -726,7 +726,7 @@ FAIR, TRUST principles, standardised templates and metadata, workflows for produ
 <p><img src="figures/resops_3.png" style="background-color:transparent; border:0px; box-shadow:none;"></img></p>
 </div>
 <aside class="notes">
-<p>Each of the components in the pipeline addresses a reproducible outcome. Containers such as Docker or Reprozip ensure long term preservation of the methods and results by wrapping the entire process, documentation and results into an executable format. This can then be shared alongside the published paper for code review, computational reproducibility, replication and reuse by others. Users can access the data and analysis products, querying the existing analysis in new ways, or with new data, or reusing parts of the pipeline in new studies.</p>
+<p>Each of the components in the pipeline addresses a reproducible outcome. Containers such as Docker or Reprozip ensure long term preservation of the methods and results by wrapping the entire process, documentation and results into an executable format. This can then be shared alongside the published paper for code review, computational reproducibility, replication and/or reuse by others. Users can access the data and analysis products, querying the existing analysis in new ways or with new data or, reusing parts of the pipeline in new studies.</p>
 </aside>
 </section>
 <section id="researchops-framework-1" class="slide level2" data-transition="fade-in fade-out">
@@ -735,7 +735,7 @@ FAIR, TRUST principles, standardised templates and metadata, workflows for produ
 <p><img src="figures/resops_framework.png" style="background-color:transparent; border:0px; box-shadow:none;"></img></p>
 </div>
 <aside class="notes">
-<p>Ideally to have this framework at the onset of a project would be nice however, going through this process can also be beneficial during a project. This can also be adopted by a single researcher or scaled to larger collaborative research projects. To conclude, modern research methods need a modern approach and as journals adopt policies for sharing data, and code, researchers can benefit from ResOps best practice to increase computational reproducibility &amp; transparency by project managing the data and code as a software product.</p>
+<p>Ideally to have this framework at the onset of a project would be nice however, going through this process can also be beneficial during a project. This can also be adopted by a single researcher or scaled to larger collaborative research projects. To conclude, modern research methods need a modern approach. As journals adopt policies for sharing data, and code, researchers can benefit from a ResOps best practice to increase computational reproducibility &amp; transparency by project managing the data and code as a software product.</p>
 </aside>
 </section>
 <section id="thank-you" class="slide level2">

@@ -195,7 +195,7 @@ At the project management level is the scientific workflow. **Scientific workflo
 
 The pipeline is a set of discrete stages in which a series of automated transformations and tests are performed on the raw data. Each stage is identified through the overall scope of the scientific workflow so that each stage has a purpose. 
 
-The components are the tools used in software development to address inconsistencies in code through automated testing and quality assurance measures so that the product maintains a standard before deployment or delivery. This ensures that the pipeline adheres to data management protocols. For researchers, this means adding testing to their tool kits and automating such tasks through continuous integration that can provide rapid feedback when a component fails and maintain a reliable pipeline.
+The components are the tools used in software development to address inconsistencies in code through automated testing and quality assurance measures so that the product maintains a standard before deployment or delivery. This ensures that the pipeline adheres to data management protocols. For researchers, this means adding testing to their tool kits and automating such tasks through continuous integration that can provide rapid feedback when a component fails to maintain a reliable pipeline.
 </div>
 
 
@@ -223,7 +223,7 @@ By scoping out the processes needed, identifying stakeholders and how to collabo
 </div>
 
 <div class="notes">
-The pipeline is where the discrete stages are processed by implementing the components in such a way as to meet the design requirements outlined in the scope. Continuous integration can be setup to meet automation requirements as needed such as weekly data reports and more importantly testing expected functionality of the code, the version control system gives the advantage of rolling back errors or feature testing before merging into the master branch and finally, a container preserves the library and dependencies at runtime. 
+The pipeline is where the discrete stages are processed by implementing the components in such a way as to meet the design requirements outlined in the scope. Continuous integration can be setup to meet automation requirements as needed such as, weekly data reports and more importantly testing expected functionality of the code. The version control system gives the advantage of rolling back errors or feature testing before merging into the master branch and finally, a container preserves the library and dependencies at runtime. 
 </div>
 
 ## Research Outcome {data-transition="fade-in fade-out"}
@@ -233,7 +233,7 @@ The pipeline is where the discrete stages are processed by implementing the comp
 </div>
 
 <div class="notes">
-Each of the components in the pipeline addresses a reproducible outcome. Containers such as Docker or Reprozip ensure long term preservation of the methods and results by wrapping the entire process, documentation and results into an executable format. This can then be shared alongside the published paper for code review, computational reproducibility, replication and reuse by others. Users can access the data and analysis products, querying the existing analysis in new ways, or with new data, or reusing parts of the pipeline in new studies.
+Each of the components in the pipeline addresses a reproducible outcome. Containers such as Docker or Reprozip ensure long term preservation of the methods and results by wrapping the entire process, documentation and results into an executable format. This can then be shared alongside the published paper for code review, computational reproducibility, replication and/or reuse by others. Users can access the data and analysis products, querying the existing analysis in new ways or with new data or, reusing parts of the pipeline in new studies.
 
 </div>
 
@@ -245,7 +245,7 @@ Each of the components in the pipeline addresses a reproducible outcome. Contain
 
 <div class="notes">
 Ideally to have this framework at the onset of a project would be nice however, going through this process can also be beneficial during a project. This can also be adopted by a single researcher or scaled to larger collaborative research projects. 
-To conclude, modern research methods need a modern approach and as journals adopt policies for sharing data, and code, researchers can benefit from ResOps best practice to increase computational reproducibility & transparency by project managing the data and code as a software product. 
+To conclude, modern research methods need a modern approach. As journals adopt policies for sharing data, and code, researchers can benefit from a ResOps best practice to increase computational reproducibility & transparency by project managing the data and code as a software product. 
 </div>
 
 ## Thank You! 

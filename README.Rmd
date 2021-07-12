@@ -11,8 +11,28 @@ knitr::opts_chunk$set(
 )
 ```
 
-# SORTEE Presentation 2021
+# [SORTEE Presentation 2021](https://www.sortee.org/events/)
 
 ## ResearchOps
 
+
+- **Aaron Willcox:**
+[![GitHub Badge](https://img.shields.io/github/followers/psychtek?style=social)](https://github.com/psychtek)
+[![Twitter Badge](https://img.shields.io/twitter/follow/aaron_willcox?style=social)](https://twitter.com/aaron_willcox)
+[![ResearchGate Badge](https://img.shields.io/badge/Research-Gate-9cf)](https://www.researchgate.net/profile/Aaron-Willcox-3)
+
+- **Elliot Gould:**
+[![GitHub Badge](https://img.shields.io/github/followers/egouldo?style=social)](https://github.com/psychtek)
+[![Twitter Badge](https://img.shields.io/twitter/follow/Elliot_Gould_?style=social)](https://twitter.com/aaron_willcox)
+[![ResearchGate Badge](https://img.shields.io/badge/Research-Gate-9cf)](https://www.researchgate.net/profile/Elise-Gould-2)
+
+Scientists face increasing demand for reproducible workflows and transparent research practices, but have a plethora of computational tools and procedures available to choose from. Developmental Operations or 'DevOps' is a system of project managing code and software development. **We translate 'DevOps' for use in research contexts and present 'ResOps'; a principled framework and guide to computational reproducibility and modern scientific workflows utilising free and open-source software.** Adopting ResOps practices will aid scientific research in becoming more reproducible and transparent.
+
+- A paper on this topic is being developed and can be followed at the [Research Gate Project](https://www.researchgate.net/project/ResearchOps-Translating-DevOps-for-the-Modern-Researcher) page.
+
+- Presentation recording can be viewed at **OSF**: [DOI 10.17605/OSF.IO/U2H57](https://osf.io/u2h57/)
+
+#### Resops Framework
+
 ![](figures/resops_framework.png)
+
